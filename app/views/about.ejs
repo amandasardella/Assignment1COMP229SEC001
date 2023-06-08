@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+
+    <style>
+      #bioImage {
+        max-width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin: 0 auto;
+        display: block;
+      }
+
+      h2,
+      #bio {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      #containerBorder {
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        display: block;
+        margin-left: 200px;
+        margin-right: 200px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <%- include ('partials/header.ejs') %> <%- include ('partials/main_nav.ejs')
+    %>
+
+    <main class="container">
+      <img src="/img/amanda2.png" id="bioImage" />
+
+      <h2>Introduction</h2>
+      <p></p>
+      <div id="containerBorder">
+        <p id="bio">
+          Hello! My name is Amanda, originally from Brazil, and currently
+          residing in Canada. I am a dedicated and passionate individual
+          pursuing my dreams in the field of technology. After careful
+          consideration, I made the bold decision to leave my law studies behind
+          and embark on a new journey to explore my passion for software
+          engineering. Currently, I am in my third semester of the Software
+          Engineering Technician program at Centennial College. This program has
+          provided me with a solid foundation in various aspects of software
+          development and engineering. From programming languages to system
+          design, I have gained valuable knowledge and practical skills that
+          will enable me to thrive in this ever-evolving field.
+        </p>
+      </div>
+
+      <p></p>
+      <h2>Skills</h2>
+      <div id="containerBorder">
+        <ul id="bio">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>C#</li>
+          <li>JavaScript</li>
+          <li>Java</li>
+        </ul>
+      </div>
+      <p></p>
+      <h2>Resume</h2>
+      <div id="containerBorder">
+        <ul id="bio">
+          <li>
+            <a href="/Assets/Amanda Nunes Sardella.pdf"
+              ><i class="fa-solid fa-file" style="color: #000000"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <%- include ('partials/bottom_nav.ejs') %> <%- include
+      ('partials/footer.ejs') %>
+    </main>
+  </body>
+</html>
