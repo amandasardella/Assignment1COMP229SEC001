@@ -1,5 +1,10 @@
-<!-- <img src="/public/img/logo.jpg" alt="Logo" /> -->
-
+<!-- 
+  File: projects.ejs
+  Student Name: Amanda Nunes Sardella
+  Student ID: #301288044
+  COMP229 - SEC001 - SUMMER 2023 - CENNTENIAL COLLEGE
+  June 9th, 2023
+-->
 <%- include ('partials/header.ejs') %> <%- include ('partials/main_nav.ejs') %>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,15 +13,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-      .project-container {
+      body {
+        padding-bottom: 70%;
       }
-
+      #images {
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      img {
+        border-radius: 25px;
+      }
       table {
         margin-right: 20px;
+        text-align: center;
+      }
+      #gameTitle {
+        font-weight: bold;
+      }
+      #project1 {
+        float: left;
+        padding: 10px;
+        width: 30%;
+      }
+      #project2 {
+        float: left;
+        padding: 10px;
+        width: 35%;
+      }
+      #project3 {
+        float: left;
+        padding: 10px;
+        width: 30%;
+      }
+      #descriptionBox {
+        text-align: justify;
       }
 
-      #project2 {
-        padding-left: 60%;
+      #descriptionBox2 {
+        padding-left: auto;
+      }
+
+      h2 {
+        text-align: center;
       }
     </style>
     <link
@@ -33,13 +72,11 @@
       <!--<h1 class="display-4">Welcome to <%= title %> page</h1>-->
     </div>
     <body>
-      <h2>Projects</h2>
+      <h2><%= title %></h2>
       <p></p>
-      <div id="containerBorder">
-        <p id="bio"></p>
-
-        <div class="project-container">
-          <table table style="display: inline-table">
+      <div>
+        <div>
+          <table table style="display: inline-table" id="project1">
             <tr>
               <th style="width: 300px; height: 30px">
                 <i class="fa-solid fa-folder" style="color: #000000"></i>
@@ -47,11 +84,11 @@
               </th>
             </tr>
             <tr>
-              <td>BooSmasher (Game)</td>
+              <td id="gameTitle">BooSmasher (Game)</td>
             </tr>
             <tr>
               <td>
-                <img src="/img/booSmasher.png" width="300" />
+                <img src="/img/booSmasher.png" width="300" id="images" />
               </td>
             </tr>
             <tr>
@@ -72,12 +109,16 @@
             <tr>
               <td>
                 <i class="fa-solid fa-code" style="color: #000000"></i> Access
-                the code HERE.
+                the code
+                <a
+                  href="https://github.com/amandasardella/COMP125_Assignment3_BooSmasher"
+                  ><b>here</b></a
+                >.
               </td>
             </tr>
           </table>
 
-          <table id="project2" table style="float: right" ; margin-left:50px>
+          <table id="project2">
             <tr>
               <th style="width: 300px; height: 30px">
                 <i class="fa-solid fa-folder" style="color: #000000"></i>
@@ -85,25 +126,56 @@
               </th>
             </tr>
             <tr>
-              <td>Portfolio</td>
+              <td id="gameTitle">Portfolio</td>
             </tr>
             <tr>
               <td>
-                <img src="/img/portfolio.png" width="300" />
+                <img src="/img/portfolio.png" width="300" id="images" />
               </td>
             </tr>
             <tr>
-              <td id="descriptionBox">
-                My first portfolio created using Express.js.
-              </td>
+              <td id="descriptionBox2">My first portfolio.</td>
             </tr>
             <tr>
-              <td>Portfolio created using Express.js, HTML5, CSS.</td>
+              <td>Portfolio created using EJS, JavaScript, CSS.</td>
             </tr>
             <tr>
               <td>
                 <i class="fa-solid fa-code" style="color: #000000"></i> Access
-                the code HERE.
+                the code
+                <a
+                  href="https://github.com/amandasardella/Assignment1COMP229SEC001"
+                  ><b>here</b></a
+                >.
+              </td>
+            </tr>
+          </table>
+
+          <table id="project3">
+            <tr>
+              <th style="width: 300px; height: 30px">
+                <i class="fa-solid fa-folder" style="color: #000000"></i>
+                Project 3
+              </th>
+            </tr>
+            <tr>
+              <td id="gameTitle">Currently working on Project #3.</td>
+            </tr>
+            <tr>
+              <td>
+                <img src="/img/project3.png" width="300" id="images" />
+              </td>
+            </tr>
+            <tr>
+              <td id="descriptionBox2">Soon.</td>
+            </tr>
+            <tr>
+              <td>Soon.</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fa-solid fa-code" style="color: #000000"></i> No code
+                yet.
               </td>
             </tr>
           </table>

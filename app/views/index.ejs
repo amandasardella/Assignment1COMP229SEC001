@@ -1,5 +1,10 @@
-<!--Created by: Amanda Nunes Sardella, Student Number #301288044 - CENTENNIAL COLLEGE - COMP229 - SEC001 - SUMMER 2023-->
-
+<!-- 
+  File: index.ejs
+  Student Name: Amanda Nunes Sardella
+  Student ID: #301288044
+  COMP229 - SEC001 - SUMMER 2023 - CENNTENIAL COLLEGE
+  June 9th, 2023
+-->
 <%- include ('partials/header.ejs') %> <%- include ('partials/main_nav.ejs') %>
 
 <!DOCTYPE html>
@@ -9,6 +14,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
       #introImage {
         width: 300px;
         height: auto;
@@ -40,34 +48,38 @@
         </div>
         <div class="col-md-8 d-flex align-items-center justify-content-center">
           <div class="">
-            <h2>Welcome to my Portfolio!</h2>
-            <div id="indexTxt">
-              <p>
-                Hello 😃! I'm Amanda, a passionate and dedicated Software
-                Engineering Technician student at Centennial College. My
-                portfolio showcases the projects I have worked on, highlighting
-                the practical application of my skills in software development,
-                programming languages, and systems analysis.
-              </p>
+            <body>
+              <h2>Welcome to my Portfolio!</h2>
+              <div id="indexTxt">
+                <p>
+                  Hello 😃! I'm Amanda, a passionate and dedicated Software
+                  Engineering Technician student at Centennial College. My
+                  portfolio showcases the projects I have worked on,
+                  highlighting the practical application of my skills in
+                  software development, programming languages, and systems
+                  analysis.
+                </p>
 
-              <p>
-                💻 GitHub:
-                <a href="https://github.com/amandasardella"
-                  >https://github.com/amandasardella</a
-                >
-              </p>
-              <p>
-                🔗 LinkedIn:
-                <a href="https://www.linkedin.com/in/amanda-sardella/"
-                  >https://www.linkedin.com/in/amanda-sardella/</a
-                >
-              </p>
-            </div>
+                <p>
+                  💻 GitHub:
+                  <a href="https://github.com/amandasardella"
+                    >https://github.com/amandasardella</a
+                  >
+                </p>
+                <p>
+                  🔗 LinkedIn:
+                  <a href="https://www.linkedin.com/in/amanda-sardella/"
+                    >https://www.linkedin.com/in/amanda-sardella/</a
+                  >
+                </p>
+              </div>
+
+              <%- include ('partials/bottom_nav.ejs') %> <%- include
+              ('partials/footer.ejs') %>
+            </body>
           </div>
         </div>
       </div>
     </div>
   </main>
-  <%- include ('partials/bottom_nav.ejs') %> <%- include ('partials/footer.ejs')
-  %>
 </html>

@@ -1,3 +1,11 @@
+/*
+  File: express.ejs
+  Student Name: Amanda Nunes Sardella
+  Student ID: #301288044
+  COMP229 - SEC001 - SUMMER 2023 - CENNTENIAL COLLEGE
+  June 9th, 2023
+*/
+
 var express = require("express"),
   morgan = require("morgan"),
   compress = require("compression"),

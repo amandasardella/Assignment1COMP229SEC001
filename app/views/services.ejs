@@ -1,5 +1,10 @@
-<!-- <img src="/public/img/logo.jpg" alt="Logo" /> -->
-
+<!-- 
+  File: services.ejs
+  Student Name: Amanda Nunes Sardella
+  Student ID: #301288044
+  COMP229 - SEC001 - SUMMER 2023 - CENNTENIAL COLLEGE
+  June 9th, 2023
+-->
 <%- include ('partials/header.ejs') %> <%- include ('partials/main_nav.ejs') %>
 
 <!DOCTYPE html>
@@ -8,11 +13,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      h2 {
+        text-align: center;
+      }
+
+      .table {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap; /* Change flex-wrap property to wrap */
+        width: 100%;
+      }
+      .cell {
+        flex-basis: calc(100% / 3);
+        padding: 10px;
+        text-align: center;
+      }
+
+      img {
+        max-width: 300px;
+        height: auto;
+        border-radius: 8%;
+      }
+      #descriptionBoxServices {
+        text-align: center;
+      }
+    </style>
   </head>
   <main class="container">
     <div class="jumbotron">
-      <h1 class="display-4">Welcome to <%= title %> page</h1>
+      <p></p>
+      <h2><%= title %> Offered</h2>
     </div>
+    <body>
+      <main>
+        <div class="table">
+          <div class="row">
+            <div class="cell">
+              <img src="/img/programminglanguages.png" alt="img1" />
+              <p id="descriptionBoxServices">
+                C#, JavaScript, Java, Python, Oracle Database
+              </p>
+            </div>
+            <div class="cell">
+              <img src="/img/webdevelopment.png" alt="img2" />
+              <p id="descriptionBoxServices">Web Development</p>
+            </div>
+            <div class="cell">
+              <img src="/img/fullstack.png" alt="img3" />
+              <p id="descriptionBoxServices">Full Stack Development</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </body>
   </main>
 
   <!--bottom nav-->

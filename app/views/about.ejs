@@ -1,5 +1,10 @@
-<!--Created by: Amanda Nunes Sardella, Student Number #301288044 - CENTENNIAL COLLEGE - COMP229 - SEC001 - SUMMER 2023-->
-
+<!-- 
+  File: about.ejs
+  Student Name: Amanda Nunes Sardella
+  Student ID: #301288044
+  COMP229 - SEC001 - SUMMER 2023 - CENNTENIAL COLLEGE
+  June 9th, 2023
+-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -14,7 +19,9 @@
         margin: 0 auto;
         display: block;
       }
-
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
       h2,
       #bio {
         max-width: 900px;
@@ -40,7 +47,7 @@
   <body>
     <%- include ('partials/header.ejs') %> <%- include ('partials/main_nav.ejs')
     %>
-
+    <h2><%= title %> me</h2>
     <main class="container">
       <img src="/img/amanda2.png" id="bioImage" />
 
@@ -61,7 +68,15 @@
           will enable me to thrive in this ever-evolving field.
         </p>
       </div>
-
+      <p></p>
+      <h2>Mission Statement</h2>
+      <div id="containerBorder">
+        To excel as a software engineering technician, utilizing my skills,
+        knowledge, and passion for technology to contribute to the development
+        and implementation of innovative software solutions. I am committed to
+        continuous learning and growth, embracing challenges to expand my
+        expertise and adapt to evolving industry trends.
+      </div>
       <p></p>
       <h2>Skills</h2>
       <div id="containerBorder">
@@ -78,7 +93,7 @@
       <div id="containerBorder">
         <ul id="bio">
           <li>
-            <a href="/Assets/Amanda Nunes Sardella.pdf"
+            <a href="/Assets/Amanda Nunes Sardella.pdf" target="_blank"
               ><i class="fa-solid fa-file" style="color: #000000"></i
             ></a>
           </li>
