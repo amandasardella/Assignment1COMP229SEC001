@@ -1,15 +1,120 @@
 <!-- <img src="/public/img/logo.jpg" alt="Logo" /> -->
 
 <%- include ('partials/header.ejs') %> <%- include ('partials/main_nav.ejs') %>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .project-container {
+      }
 
-<main class="container">
-  <div class="jumbotron">
-    <h1 class="display-4">Welcome to <%= title %> page</h1>
-  </div>
-</main>
+      table {
+        margin-right: 20px;
+      }
 
-<!--bottom nav-->
+      #project2 {
+        padding-left: 60%;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<!--script section-->
-<%- include ('partials/bottom_nav.ejs') %> <%- include ('partials/footer.ejs')
-%>
+  <main class="container">
+    <div class="jumbotron">
+      <!--<h1 class="display-4">Welcome to <%= title %> page</h1>-->
+    </div>
+    <body>
+      <h2>Projects</h2>
+      <p></p>
+      <div id="containerBorder">
+        <p id="bio"></p>
+
+        <div class="project-container">
+          <table table style="display: inline-table">
+            <tr>
+              <th style="width: 300px; height: 30px">
+                <i class="fa-solid fa-folder" style="color: #000000"></i>
+                Project 1
+              </th>
+            </tr>
+            <tr>
+              <td>BooSmasher (Game)</td>
+            </tr>
+            <tr>
+              <td>
+                <img src="/img/booSmasher.png" width="300" />
+              </td>
+            </tr>
+            <tr>
+              <td id="descriptionBox">
+                The bug hops randomly around the game area at a given interval.
+                The player tries to catch the bug by clicking on it. If they
+                succeed, the score is incremented, and the hopping interval is
+                decremented by a number of milliseconds, so it gets harder to
+                catch the bug. If the game becomes too challenging, the player
+                can reset the speed to the initial hopping interval by clicking
+                the Reset Speed button. If the player wants, they can start
+                again by resetting the score by clicking the Reset Score button.
+              </td>
+            </tr>
+            <tr>
+              <td>Game created using JavaScript.</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fa-solid fa-code" style="color: #000000"></i> Access
+                the code HERE.
+              </td>
+            </tr>
+          </table>
+
+          <table id="project2" table style="float: right" ; margin-left:50px>
+            <tr>
+              <th style="width: 300px; height: 30px">
+                <i class="fa-solid fa-folder" style="color: #000000"></i>
+                Project 2
+              </th>
+            </tr>
+            <tr>
+              <td>Portfolio</td>
+            </tr>
+            <tr>
+              <td>
+                <img src="/img/portfolio.png" width="300" />
+              </td>
+            </tr>
+            <tr>
+              <td id="descriptionBox">
+                My first portfolio created using Express.js.
+              </td>
+            </tr>
+            <tr>
+              <td>Portfolio created using Express.js, HTML5, CSS.</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fa-solid fa-code" style="color: #000000"></i> Access
+                the code HERE.
+              </td>
+            </tr>
+          </table>
+
+          <!--bottom nav-->
+
+          <!--script section-->
+          <%- include ('partials/bottom_nav.ejs') %> <%- include
+          ('partials/footer.ejs') %>
+        </div>
+      </div>
+    </body>
+  </main>
+</html>

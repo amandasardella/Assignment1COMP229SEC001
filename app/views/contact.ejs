@@ -1,11 +1,12 @@
+<!--Created by: Amanda Nunes Sardella, Student Number #301288044 - CENTENNIAL COLLEGE - COMP229 - SEC001 - SUMMER 2023-->
+
 <%- include ('partials/header.ejs') %> <%- include ('partials/main_nav.ejs') %>
-
-<main class="container">
-  <div class="contact" style="text-align: center">
-    <p></p>
-
-    <!-- form -->
-    <!--<h4>Contact</h4>-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       #form {
         text-align: center;
@@ -14,120 +15,128 @@
         text-align: center;
       }
     </style>
-    <h2 id="estateListings">Contact</h2>
-    <div id="contact">
-      <form
-        action="mailto:anunessa@my.centennialcollege.ca"
-        method="post"
-        style="display: inline-block; text-align: left"
-      >
-        <fieldset class="form">
-          <table>
-            <tr>
-              <td><b>First Name</b></td>
-              <td>
-                <p class="Contact">
-                  <input
-                    type="text"
-                    name="First Name"
-                    id="FirstName"
-                    tabindex="1"
-                    required="required"
-                    placeholder="First Name"
-                    size="30"
-                  />
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td><b>Last Name</b></td>
-              <td>
-                <p class="Contact">
-                  <input
-                    type="text"
-                    name="Last Name"
-                    id="LastName"
-                    tabindex="1"
-                    required="required"
-                    placeholder="Last Name"
-                    size="30"
-                  />
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td><b>Email</b></td>
-              <td>
-                <p class="Contact">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    tabindex="2"
-                    placeholder="email@email.com"
-                    size="30"
-                  />
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td><b>Contact Number</b></td>
-              <td>
-                <p class="Contact">
-                  <input
-                    type="text"
-                    name="txtphone"
-                    id="txtphone"
-                    tabindex="3"
-                    required="required"
-                    placeholder="Contact Number"
-                    size="30"
-                  />
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td><b>Message</b></td>
-              <td>
-                <p class="Contact">
-                  <textarea
-                    name="otherComments"
-                    id="otherComments"
-                    cols="45"
-                    rows="6"
-                    placeholder="Insert your message here."
-                    tabindex="4"
-                  ></textarea>
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>
-                <p
-                  style="text-align: center"
-                  class="Contact"
-                  style="text-indent: 0px"
-                >
-                  <input
-                    type="submit"
-                    name="submit"
-                    id="submit"
-                    value="Submit"
-                    tabindex="5"
-                  />
-                </p>
-              </td>
-            </tr>
-          </table>
-        </fieldset>
-      </form>
+  </head>
+  <main class="container">
+    <div class="contact" style="text-align: center">
+      <p></p>
+
+      <!-- form -->
+      <!--<h4>Contact</h4>-->
+
+      <h2 id="estateListings">Contact</h2>
+      <div id="contact">
+        <form
+          action="mailto:anunessa@my.centennialcollege.ca"
+          method="post"
+          style="display: inline-block; text-align: left"
+        >
+          <fieldset class="form">
+            <table>
+              <tr>
+                <td><b>First Name</b></td>
+                <td>
+                  <p class="Contact">
+                    <input
+                      type="text"
+                      name="First Name"
+                      id="FirstName"
+                      tabindex="1"
+                      required="required"
+                      placeholder="First Name"
+                      size="30"
+                    />
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td><b>Last Name</b></td>
+                <td>
+                  <p class="Contact">
+                    <input
+                      type="text"
+                      name="Last Name"
+                      id="LastName"
+                      tabindex="1"
+                      required="required"
+                      placeholder="Last Name"
+                      size="30"
+                    />
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td><b>Email</b></td>
+                <td>
+                  <p class="Contact">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      tabindex="2"
+                      placeholder="email@email.com"
+                      size="30"
+                    />
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td><b>Contact Number</b></td>
+                <td>
+                  <p class="Contact">
+                    <input
+                      type="text"
+                      name="txtphone"
+                      id="txtphone"
+                      tabindex="3"
+                      required="required"
+                      placeholder="Contact Number"
+                      size="30"
+                    />
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td><b>Message</b></td>
+                <td>
+                  <p class="Contact">
+                    <textarea
+                      name="otherComments"
+                      id="otherComments"
+                      cols="45"
+                      rows="6"
+                      placeholder="Insert your message here."
+                      tabindex="4"
+                    ></textarea>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <p
+                    style="text-align: center"
+                    class="Contact"
+                    style="text-indent: 0px"
+                  >
+                    <input
+                      type="submit"
+                      name="submit"
+                      id="submit"
+                      value="Submit"
+                      tabindex="5"
+                    />
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+      </div>
+
+      <!--bottom nav-->
+      <!--script section-->
+      <%- include ('partials/bottom_nav.ejs') %> <%- include
+      ('partials/footer.ejs') %>
     </div>
-
-    <!--bottom nav-->
-
-    <!--script section-->
-    <%- include ('partials/bottom_nav.ejs') %> <%- include
-    ('partials/footer.ejs') %>
-  </div>
-</main>
+  </main>
+</html>

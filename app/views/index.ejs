@@ -1,60 +1,73 @@
-<%- include ('partials/header.ejs') %> <%- include ('partials/main_nav.ejs') %>
-<style>
-  #introImage {
-    width: 300px;
-    height: auto;
-    border-radius: 30%;
-    margin-bottom: 20px;
-    margin-left: 130px;
-  }
-  #indexTxt {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: justify;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  h2 {
-    text-align: center;
-  }
-</style>
-<main class="container">
-  <div class="jumbotron">
-    <div class="row">
-      <div class="col-md-4">
-        <p></p>
-        <img src="/img/amanda3.png" id="introImage" />
-      </div>
-      <div class="col-md-8 d-flex align-items-center justify-content-center">
-        <div class="">
-          <h2>Welcome to my Portfolio!</h2>
-          <div id="indexTxt">
-            <p>
-              Hello 😃! I'm Amanda, a passionate and dedicated Software
-              Engineering Technician student at Centennial College. My portfolio
-              showcases the projects I have worked on, highlighting the
-              practical application of my skills in software development,
-              programming languages, and systems analysis.
-            </p>
+<!--Created by: Amanda Nunes Sardella, Student Number #301288044 - CENTENNIAL COLLEGE - COMP229 - SEC001 - SUMMER 2023-->
 
-            <p>
-              💻 GitHub:
-              <a href="https://github.com/amandasardella"
-                >https://github.com/amandasardella</a
-              >
-            </p>
-            <p>
-              🔗 LinkedIn:
-              <a href="https://www.linkedin.com/in/amanda-sardella/"
-                >https://www.linkedin.com/in/amanda-sardella/</a
-              >
-            </p>
+<%- include ('partials/header.ejs') %> <%- include ('partials/main_nav.ejs') %>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #introImage {
+        width: 300px;
+        height: auto;
+        border-radius: 30%;
+        margin-bottom: 20px;
+        margin-left: 130px;
+      }
+      #indexTxt {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: justify;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <main class="container">
+    <div class="jumbotron">
+      <!--<h1 class="display-4">Welcome to <%= title %> page</h1>-->
+      <div class="row">
+        <div class="col-md-4">
+          <p></p>
+          <img src="/img/amanda3.png" id="introImage" />
+        </div>
+        <div class="col-md-8 d-flex align-items-center justify-content-center">
+          <div class="">
+            <h2>Welcome to my Portfolio!</h2>
+            <div id="indexTxt">
+              <p>
+                Hello 😃! I'm Amanda, a passionate and dedicated Software
+                Engineering Technician student at Centennial College. My
+                portfolio showcases the projects I have worked on, highlighting
+                the practical application of my skills in software development,
+                programming languages, and systems analysis.
+              </p>
+
+              <p>
+                💻 GitHub:
+                <a href="https://github.com/amandasardella"
+                  >https://github.com/amandasardella</a
+                >
+              </p>
+              <p>
+                🔗 LinkedIn:
+                <a href="https://www.linkedin.com/in/amanda-sardella/"
+                  >https://www.linkedin.com/in/amanda-sardella/</a
+                >
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</main>
-<%- include ('partials/bottom_nav.ejs') %> <%- include ('partials/footer.ejs')
-%>
+  </main>
+  <%- include ('partials/bottom_nav.ejs') %> <%- include ('partials/footer.ejs')
+  %>
+</html>
